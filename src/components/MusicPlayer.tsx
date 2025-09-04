@@ -398,7 +398,7 @@ export default function MusicPlayer() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-black/60 backdrop-blur-md text-white px-4 sm:px-6 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.6)] z-50 border-t border-purple-500/20">
+    <div className="fixed bottom-0 left-0 w-full bg-black/60 backdrop-blur-md text-white px-4 sm:px-6 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.6)] z-50 border-t border-green-500/20">
       <audio src={currentMusic.audio_url || ""} ref={audioRef}></audio>
 
       <div className="max-w-8xl w-full mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
@@ -413,7 +413,7 @@ export default function MusicPlayer() {
             priority
           />
           <div>
-            <p className="font-medium text-sm sm:text-base bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+            <p className="font-medium text-sm sm:text-base bg-gradient-to-r from-green-400 to-pink-500 bg-clip-text text-transparent">
               {currentMusic.title}
             </p>
             <p className="text-gray-400 font-normal text-xs sm:text-sm">
@@ -457,7 +457,7 @@ export default function MusicPlayer() {
               min="0"
               max={duration}
               value={currentTime}
-              className="w-full h-1 rounded-md accent-purple-500 cursor-pointer bg-zinc-700"
+              className="w-full h-1 rounded-md accent-green-500 cursor-pointer bg-zinc-700"
             />
             <span className="text-gray-400">{formatTime(duration)}</span>
           </div>
@@ -482,7 +482,7 @@ export default function MusicPlayer() {
           )}
 
           <button
-            className="text-gray-400 text-lg sm:text-xl cursor-pointer hover:text-purple-400 transition"
+            className="text-gray-400 text-lg sm:text-xl cursor-pointer hover:text-green-400 transition"
             onClick={() => setQueueModalOpen(!isQueueModalOpen)}
           >
             <MdOutlineQueueMusic />

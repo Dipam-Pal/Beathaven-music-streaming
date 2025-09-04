@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTrash } from "react-icons/fa";
+// import { FaTrash } from "react-icons/fa";
 import supabase from "../../api/SupabaseClient";
 import { useQueryClient } from "@tanstack/react-query";
 
