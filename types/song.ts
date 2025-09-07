@@ -6,4 +6,5 @@ export type Song = {
   audio_url: string;
   user_id: string;
   created_at: string;
+  description?: string;
 };
